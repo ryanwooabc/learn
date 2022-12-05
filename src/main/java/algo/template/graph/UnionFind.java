@@ -1,4 +1,4 @@
-package algo.template;
+package algo.template.graph;
 
 public class UnionFind {
 
