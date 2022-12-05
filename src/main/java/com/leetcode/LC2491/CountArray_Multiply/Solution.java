@@ -1,4 +1,4 @@
-package com.leetcode.LC2491_CountArray_Multiply;
+package com.leetcode.LC2491.CountArray_Multiply;
 
 import java.util.*;
 
@@ -7,41 +7,6 @@ import java.util.*;
 
 class Solution {
 
-    /*
-        # Questions: 
-         - 将数组分成若干对，没对和相同，求对乘积之和
-
-        # Input: 
-         - 技能数组
-
-        # Output:
-         - 乘积和
-         - 不能分配返回-1
-
-        # Constraints:
-         - 技能数组长度长度为偶数, [2, 10^5]
-         - 技能，[1, 1000]
-
-        # Test Case:
-         - skill = [3,2,5,1,3,4], return 22
-         - skill = [1,1,2,3], return -1
-
-        # Solution1: 计数 + 乘法
-         - 统计每个skill值的个数，与总和
-         - 计算每队和p，不如非整数，返回-1
-         - 从1到p/2-1遍历数对里小的数
-         - 如果两数相等，个数是奇数返回-1，否则该数平方*一半个数
-         - 否则，大小数的个数必须相等，大数乘小数，乘个数
-         - Time: O(N)
-         - Space: O(V)
-
-        # Solution2: 排序 + 双指针
-         - 对数组排序，每对和为首尾和
-         - 前后指针向中间移动，如果和不为固定数，则返回-1
-         - 否则两数乘积加到结果上
-         - Time: O(N*LogN)
-         - Space: O(1)
-    */
     public long dividePlayers(int[] skill) {
         int[] count = new int[2001];
         long n = skill.length, m = n / 2, sum = 0;
