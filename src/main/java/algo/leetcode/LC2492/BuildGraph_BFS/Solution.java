@@ -1,4 +1,4 @@
-package com.leetcode.LC2492.BuildGraph_BFS;
+package algo.leetcode.LC2492.BuildGraph_BFS;
 
 import java.util.*;
 

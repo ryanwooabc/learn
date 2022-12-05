@@ -1,4 +1,4 @@
-package com.leetcode.LC2492.UnionFind;
+package algo.leetcode.LC2492.UnionFind;
 
 import java.util.ArrayDeque;
 import java.util.HashMap;

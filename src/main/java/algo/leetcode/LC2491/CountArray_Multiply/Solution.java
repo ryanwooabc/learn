@@ -1,4 +1,4 @@
-package com.leetcode.LC2491.CountArray_Multiply;
+package algo.leetcode.LC2491.CountArray_Multiply;
 
 import java.util.*;
 

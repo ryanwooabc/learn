@@ -1,4 +1,4 @@
-package com.leetcode.LC2493.UionFind_BFS;
+package algo.leetcode.LC2493.UionFind_BFS;
 
 import java.util.*;
 

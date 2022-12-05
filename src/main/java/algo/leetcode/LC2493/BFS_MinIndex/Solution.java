@@ -1,4 +1,4 @@
-package com.leetcode.LC2493.BFS_MinIndex;
+package algo.leetcode.LC2493.BFS_MinIndex;
 
 import java.util.*;
 

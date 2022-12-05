@@ -1,4 +1,4 @@
-package com.leetcode.LC2490.IterateSpace;
+package algo.leetcode.LC2490.IterateSpace;
 
 // 2490-circular-sentence
 // Q: https://leetcode.com/problems/circular-sentence/

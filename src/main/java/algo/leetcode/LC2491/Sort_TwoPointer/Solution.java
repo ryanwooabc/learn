@@ -1,4 +1,4 @@
-package com.leetcode.LC2491.Sort_TwoPointer;
+package algo.leetcode.LC2491.Sort_TwoPointer;
 
 import java.util.Arrays;
 

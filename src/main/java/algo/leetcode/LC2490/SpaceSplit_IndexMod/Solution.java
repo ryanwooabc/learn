@@ -1,4 +1,4 @@
-package com.leetcode.LC2490.SpaceSplit_IndexMod;
+package algo.leetcode.LC2490.SpaceSplit_IndexMod;
 
 // 2490-circular-sentence
 // Q: https://leetcode.com/problems/circular-sentence/
