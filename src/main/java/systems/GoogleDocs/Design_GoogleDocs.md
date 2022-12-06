@@ -1,10 +1,12 @@
 # Design GoogleDocs
+- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/gkBKz2WL9Bk
 
 ## Functional Requirement
 - pure text
 - collaborate editing
 - doc sync
 - view/restore edit history
+- TODO: comments      
 
 ## Non-functional Requirement
 - high reliablity: only one state per doc

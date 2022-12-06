@@ -14,11 +14,11 @@
 - 
 
 # Solution1: Tags
-- Steps
+- TODO-Steps
 - Time: O(V * E)
 - Space: O(V + E)
 
-# Solution2:
-- Steps
+# Solution2: Tags
+- TODO-Steps
 - Time: O(V * E)
 - Space: O(V + E)  
