@@ -26,6 +26,6 @@ public class UnionFind2 {
     }
 
     public int count(int i) {
-        return count[i];
+        return count[find(i)];
     }
 }
