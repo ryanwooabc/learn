@@ -4,9 +4,9 @@
 ## Functional Requirement
 - pure text
 - collaborate editing
-- doc sync
+- online/offline doc sync
 - view/restore edit history
-- TODO: comments      
+- TODO: comments
 
 ## Non-functional Requirement
 - high reliablity: only one state per doc
@@ -108,6 +108,9 @@
 - 1234-5678-9abc-d
 - 1234-5678-9abc-de
 - 0123-4567-89ab-cd
+
+## Questions
+- client-server or peer-to-peer
 
 
 
