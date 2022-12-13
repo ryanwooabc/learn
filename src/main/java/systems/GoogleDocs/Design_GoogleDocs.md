@@ -1,5 +1,10 @@
 # Design GoogleDocs
 - https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/gkBKz2WL9Bk
+- Google Docs System design | Part 1| Operational transformation | differentail synchronisation
+- https://www.youtube.com/watch?v=2auwirNBvGg
+- https://www.youtube.com/watch?v=U2lVmSlDJhg
+- Design collaborative editing system like google docs.
+- https://www.youtube.com/watch?v=ZDshinJ2HJo
 
 ## Category
 - Live Chat, Messenger Service
@@ -55,10 +60,6 @@
 - DocSvc persist state
 - DocSvc compute OT for each client
 - Client receive (finalVersionID, OT)
-
-
-
-
 
 ### Operational Transformation
 - o --> a ---+
