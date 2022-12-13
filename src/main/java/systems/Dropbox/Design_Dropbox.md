@@ -41,12 +41,13 @@
 - FileJournals(namespaceId, relativePath, journalId, blockList)
 
 ## High-level Design
--           +---> Notif <- MessageQueue --+
-- Client ---+---> LB ------------------> AppSvr ---+---> MetadataCache ---> MetadataDB
--           |      |
--           +---> BlockServer ---> CloudStorage ---> ColdStorage
-
-![ImageURL](https://github.com/ryanwooabc/learn/blob/main/systems/Dropbox/Design_Dropbox.png)
+```java
+           +---> Notif <- MessageQueue --+
+ Client ---+---> LB ------------------> AppSvr ---+---> MetadataCache ---> MetadataDB
+           |      |
+           +---> BlockServer ---> CloudStorage ---> ColdStorage
+```
+![ImageURL](https://raw.githubusercontent.com/ryanwooabc/learn/main/src/main/java/systems/Dropbox/Design_Dropbox.png)
 
 ## Detail Design
 
