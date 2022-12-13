@@ -1,19 +1,25 @@
 # Design GoogleDocs
 - https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers/gkBKz2WL9Bk
 
+## Category
+- Live Chat, Messenger Service
+
 ## Functional Requirement
 - pure text
 - collaborate editing
 - online/offline doc sync
 - view/restore edit history
 - TODO: comments
+- TODO: suggestion and correction
+- TODO: import and export to PDF
 
 ## Non-functional Requirement
 - high reliablity: only one state per doc
 - high availability: view and edit docs anytime
 - high sacalibity: 100M documents
 - low latency: change real time
--
+- high consistency: everyone need to see the same version
+
 ## Capacity Estimatioin
 - 100M DAU, 100M documents, 5 collaborators / doc, 100 changes / user day
 - 100M * 10% = 10M WebSocket Conns
@@ -40,10 +46,19 @@
 - states(id, docId, content)
 
 ## High-level Design
+-   +---> AccessSvc / DocMetaSvc
+-   +                    +->- InQ --->+
+- Client <---> WSServer -+            +-- DocService ---> Cache ---> DocDB
+-                                             |
+-                        +-<- OutQ <-- fanout +
+- Client send (userId, docId, baseVersionId, OT)
+- DocSvc persist state
+- DocSvc compute OT for each client
+- Client receive (finalVersionID, OT)
 
-### Git vs Google Docs
-- Git: manual commit and resolve
-- GoogleDocs: auto & real time as known sequence
+
+
+
 
 ### Operational Transformation
 - o --> a ---+
@@ -65,6 +80,8 @@
 
 ## Detail Design
 
+## Scalability
+- Queue sharding by docID
 
 ## Fault Tolerance
 - Server: can reboot directly, only based on known states
@@ -111,8 +128,9 @@
 
 ## Questions
 - client-server or peer-to-peer
-
-
+- Git vs GoogleDocs
+- Git: manual commit and resolve
+- GoogleDocs: auto & real time as known sequence
 
 
 
