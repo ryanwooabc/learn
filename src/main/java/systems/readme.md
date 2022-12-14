@@ -1,0 +1,41 @@
+# System Design
+- https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+- https://www.educative.io/courses/grokking-adv-system-design-intvw
+- https://bytebytego.com/courses/system-design-interview/design-youtube
+
+# Questions
+- ChatApp
+- ConsistentHash
+- DistributedWebCrawler
+- Dropbox / GoogleDrive
+- GoogleDocs
+- GoogleMaps
+- GoogleSearch
+- HotelBooking
+- ID-Generator
+- Instagram
+- KVStore
+- Logging
+- MessageQueue
+- MonitoringAlertingSystem
+- NewsFeed
+- NotificationSystem
+- ObjectStore
+- Pastebin
+- PaymentSystem
+- PubSubA
+- Quora
+- RateLimiter
+- SharedCounter
+- StockExchange
+- TaskScheduler
+- TaskScheduler
+- TicketMaster
+- TinyURL
+- Twitter
+- TwitterSearch
+- Typeahead
+- Uber
+- WebCrawler
+- Yelp
+- Youtube / Netflix
