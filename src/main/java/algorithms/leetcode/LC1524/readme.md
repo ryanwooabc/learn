@@ -8,7 +8,7 @@
 - 个数，mod 1_000_000_007
 
 # Constraints:
-- 1 <= arr.length <= 105
+- 1 <= arr.length <= 10^5
 - 1 <= arr[i] <= 100
 
 # Test Case:

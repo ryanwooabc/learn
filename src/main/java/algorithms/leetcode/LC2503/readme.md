@@ -13,7 +13,7 @@
 - m == grid.length
 - n == grid[i].length
 - 2 <= m, n <= 1000
-- 4 <= m * n <= 105
+- 4 <= m * n <= 10^5
 - k == queries.length
 - 1 <= k <= 104
 - 1 <= grid[i][j], queries[i] <= 106

@@ -9,7 +9,7 @@
 
 # Constraints:
 - n == nums.length
-- 1 <= n <= 105
+- 1 <= n <= 10^5
 - 1 <= nums[i], k <= n
 - The integers in nums are distinct.
 

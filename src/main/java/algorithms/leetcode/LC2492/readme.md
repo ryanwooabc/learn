@@ -8,8 +8,8 @@
  - 最小路值
 
 # Constraints:
- - 2 <= n <= 105
- - 1 <= roads.length <= 105
+ - 2 <= n <= 10^5
+ - 1 <= roads.length <= 10^5
  - roads[i].length == 3
  - 1 <= ai, bi <= n
  - ai != bi
