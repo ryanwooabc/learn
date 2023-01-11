@@ -71,13 +71,14 @@
 
 
 ## Detail Design
-
+```java
 -                         +-------> RuleCache ----> WorkerN ---> RuleDB
 - Client ---------> RateLimiter ----(Success)---> APIServiceN
 -   ^                 |   +-----> RateCache
 -   |                 |
 -   +---HTTP 429------+------> RequestDrop
 -                     +------> MessageQueue
+```
 
 - Worker: pull from RuleDB and populated into RuleCache
 - RateLimiter: load rule from RuleCache, fetch counter and last request timestamp from RateCache

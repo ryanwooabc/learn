@@ -34,9 +34,11 @@
 - PopularityService: consume MQ, calculate popular products for each category
     - schelue at free time
 
+```java
 - Client -> LB -+-> MusicService ---> Kafka <--- TopKGenerator
 -               |                                      |
 -               +-> TopKService -------------------> Cache ---> TopKDB
+```
 
 ## Detail Design
 

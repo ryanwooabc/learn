@@ -32,11 +32,13 @@
 - can analyse URL usage
 
 ## Sequence Diagram
+```java
 Client                       TinyURL
 |								|
 |------- visit short URL ----->|
 |<- HTTP 301, location:longURL-|
 |------- visit long URL ------>|
+```
 
 ## Database
 - urls(id, shortURL, longURL)

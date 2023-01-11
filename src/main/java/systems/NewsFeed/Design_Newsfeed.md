@@ -63,6 +63,7 @@
         - only generate for active user or with login pattern
         -
 
+```java
 -                                      +---------------------+-> MetadataCache ---> MetadataDB
 - App/Web -+-> LB -> WebServer --> AppServer -> PostSerivce -+-> PostCache ---> PostDB
 -                                                    |       +-> MediaCache ---> S3
@@ -78,6 +79,7 @@
 - App/Web -+-> LB -> WebServer (Conn/Auth/Rate) ---> NewsfeedService ---+---> NewsfeedCache
 -          |                                                            +---> PostCache ---> PostDB
 -          +-> CDN (Image, Video)
+```java
 
 - WebServer: maintain user connection, auth and limit rate
 - PostService: Persist Post data into DB and cache

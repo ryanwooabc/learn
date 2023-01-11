@@ -18,8 +18,10 @@
 - 1B DAU * 10 searches / 24 / 3600 ~= 100K QPS
 
 ## High Level Design
+```java
 - PageStore ---> Indexer ---> IndexStore
 - Client ---> QueryService ---->--+
+```
 
 ### Indexer
 - Tokenization

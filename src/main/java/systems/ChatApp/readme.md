@@ -62,13 +62,14 @@
 - ServiceDiscovery: coordinates closely with chat servers to avoid overload
 - ThirdParty / Push Notification: notify when app not running
 - ChatDB / KV: horizontal scaling, low latency like HBase for FB and Cassandra for Discord
-
+```java
 - client --+-- WebSocket --+---> PresenceServer -------> StatusDB
 -          |               +-+-> ChatServerN ---> ChatDB <--- ChatService
 -          |                 ^        |                          ^ 
 -          |      DiscoveryService    + --> MQ --> PN            | 
 -          |                 |                                   |
 -          +-- LB --> AppServer ---------------------------------+
+```
 
 - ServiceDiscovery
     - Client login
@@ -76,10 +77,12 @@
     - DiscoveryService find the best Chat Server
     - Client connects to the Chat Server
 
+```java
 -                +---> ID Generator	              +---> Notification
 - User1 -----> ChatServer1 ---> MessageSyncQueue -+---> ChatDB
 -                                                 |
 - User2 -----> ChatServer2 <----------------------+
+```
 
 - One-on-one Messages
     - User1 sends Message1 to ChatServer1
@@ -102,16 +105,20 @@
     - TODO: Initiated by Client or Chat Server?
     - TODO: Will Clients connect to different Chat servers?
 
+```java
 - User1 ---> ChatServer1 -+-> MQ1 ---> ChatServer2 ---> User2
   +-> MQ2 ---> ChatServer3 --->User3
-
+```
+        
 - Group Chat
     - each group member has a MQ
     - Message1 will be copied to MQ of other group members
     - limited group members
 
+```java
 - User1 ---> WebSocket ---> StatusServer -+-> StatusDB
 -        +-> Logout ---> AppSvr ----------+
+```
 
 - Online Status
     - login, connect to StatusServer, get status list of all friends

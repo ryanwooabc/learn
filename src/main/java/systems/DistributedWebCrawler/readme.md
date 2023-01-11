@@ -32,6 +32,7 @@
 - Bandwidth: 600 * 500K / s = 300MBps = 2Gbps
 
 ## High Level
+```java
 -                               DNS Resolver                            ContentDB  
 -                                   ^                                        ^  
 -                                   |                                        |  
@@ -44,6 +45,8 @@
 -                   +--------------------------------------------------- URL Seen?  
 -                                                                            |  
 -                                                                         URL DB  
+```java
+
 - Seed URL: starting point
 - URL Frontier: URL Queue, Kafka? 参考文献？Distribute to multiple servers
 - URL Filter: filter content types, blacklist websites, user customized, domain, prefix, protocols

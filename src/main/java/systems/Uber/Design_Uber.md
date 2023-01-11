@@ -40,12 +40,13 @@
 - drivers(id, lastName, firstName, gender, birthDate, maker, model, color, plate, phone, email)
 
 ## High-level Design
-
+```java
 - Rider ---> LB ---> Aggragator
 -            \               |
 -             PN         QuadTreeServer  <--- QuadTreeIndex ---> LocationDB
 -           /      \         |
 - Driver -----> LB --> LocationServer ---> SSD
+```
 
 ## Detail Design
 

@@ -55,7 +55,7 @@
 - users(id, type, lastName, firstName, email, addr, birthDate, details)
 
 ## High-level Design
-
+```java
 -                                                                 UserDB
 -                                                                   |
 - Client(upload/search/view) -> LB -> WebServer ----------------> AppSvr ------+-------------+
@@ -63,7 +63,7 @@
 -     |                                |    ThumbnailDB/Cache <--+- +   ProcessingQueue     MQ
 -    CDN <--------------- ViewImageCache <------ VideoStorage <--+  |          |             |
 -                                                                 Encoder -----+-------------+
-
+```
 
 - ProcessingQueue: to upload video
 - Encoder: different resolution, file type

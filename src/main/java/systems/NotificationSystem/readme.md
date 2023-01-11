@@ -59,6 +59,7 @@
 - analysis, open/click/engament rate
 
 ## Update Design
+```java
 -                     +---> Analysis Service <------------------------------+
 -                     |                           +-<--- retry on error ----+
 - ServiceN --> NotifSystem(Auth,RateLimit) ---> iOS PN ------------------> Worker ----> APNS ----> iOS
@@ -66,6 +67,7 @@
 -                   Cache                                                   +---> Notification Log
 -                     |
 -                DB(device/user/setting info) 
+```
 
 ## Terminology
 - breaking news

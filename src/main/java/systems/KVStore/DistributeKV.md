@@ -38,9 +38,11 @@
 - CP: SQL, Bank, Finance, AP: NoSQL, Distributed System
 
 ## Detail Design
+```java
 -                                +--- Node 6   +---> Node1
 - Client ---> (write/read) ---> Node5 ---------+---> Node2
 -                                +--- Node 4   +---> Node3
+```
 
 ### Data partition
 - consistent hash with virtual nodes
@@ -75,16 +77,18 @@
 - Merkle tree
 
 ###  Write Path
-
+```java
 - Client --------------+---------------> MemoryCahce
 -                      |                     |
 -                   CommitLog             SSTable
+```
 
 ### Read Path
-
+```java
 - Client -------------------------------> MemeryCache
 -                                            |
 -            ResultData <--- SSTable <--- BloomFilter
+```
 
 ## Replication
 - across data center

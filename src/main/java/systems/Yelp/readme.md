@@ -34,13 +34,14 @@
 
 
 ## High-level Design
-
+```java
 - Client ---> LB ---> AppSvr ---> AggregatorN ---> QuadTreeServer ---> QuadTreeIndexer -+-> DB
 -                       +---------------------------------------------------------------+
 
 -            +--> CDN
 - Customer --+--> LB -->
 - Business --+
+```
 
 ## Detail Design
 - location not changed often
