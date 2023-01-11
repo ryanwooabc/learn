@@ -26,7 +26,7 @@
 - Time: O(V * E)
 - Space: O(V + E)
 
-# Solution2: Tags
+# Solution1F: Tags
 - TODO-Steps
 - Time: O(V * E)
 - Space: O(V + E)

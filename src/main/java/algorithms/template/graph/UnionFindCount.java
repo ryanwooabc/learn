@@ -1,10 +1,10 @@
 package algorithms.template.graph;
 
-public class UnionFind2 {
+public class UnionFindCount {
 
     int[] root, count;
 
-    public UnionFind2(int n) {
+    public UnionFindCount(int n) {
         root = new int[n];
         count = new int[n];
         for (int i = 0; i < n; i ++) {

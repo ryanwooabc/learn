@@ -1,4 +1,4 @@
-package algorithms.leetcode.LC2503.Set_CountMap_PQ_BFS;
+package algorithms.leetcode.LC2503.Set_CountMap_Dijkstra;
 
 import java.util.*;
 

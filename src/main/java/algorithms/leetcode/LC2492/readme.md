@@ -28,7 +28,7 @@
  - Time: O(V + E)
  - Space: O(V + E)
 
-# Solution2: UionFind
+# Solution1F: UionFind
  - 创建并初始化root数组
  - 遍历所有边，合并每对顶点
  - 遍历所有边，如果和节点0同根，则更新最小的结果

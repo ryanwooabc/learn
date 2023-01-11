@@ -31,7 +31,7 @@
  - Time: O(V * E)
  - Space: O(V + E)
  
-# Solution2: BFS + Bipartite 
+# Solution1F: BFS + Bipartite 
  - 遍历所有边，转成无向图
  - 遍历所有顶点i，从i出发找出图的深度
     - 创建层次数组，和BFS队列，初始化level[i]=1

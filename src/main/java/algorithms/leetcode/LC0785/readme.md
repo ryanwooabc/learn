@@ -18,7 +18,7 @@
 - Time: O(V * E)
 - Space: O(V + E)
 
-# Solution2:
+# Solution1F:
 - Steps
 - Time: O(V * E)
 - Space: O(V + E)

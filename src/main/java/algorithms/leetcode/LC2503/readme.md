@@ -34,7 +34,7 @@
 - Time: O(MN * LogMN + Q * LogQ)
 - Space: O(MN + Q)
 
-# Solution2: Set + CountMap + PQ + BFS
+# Solution1F: Set + CountMap + Dijkstra
 - 将查询数组去重放入 count
 - 新建优先队列 [v, i, j]，按v排列，并放入开始位置
 - 遍历 count 里所有的键 q

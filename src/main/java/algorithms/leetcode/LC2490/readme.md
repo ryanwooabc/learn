@@ -23,7 +23,7 @@
  - Time: O(N)
  - Space: O(N)
 
-# Solution2: IterateSpace
+# Solution1F: IterateSpace
  - 遍历每个字符，如果是空格，且左右不同，则放回False
  - 最后判断字符串首尾是否相同
  - Time: O(N)

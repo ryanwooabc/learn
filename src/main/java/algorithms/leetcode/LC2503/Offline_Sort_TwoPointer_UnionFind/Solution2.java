@@ -1,7 +1,7 @@
 package algorithms.leetcode.LC2503.Offline_Sort_TwoPointer_UnionFind;
 
 import java.util.Arrays;
-import algorithms.template.graph.UnionFind2;
+import algorithms.template.graph.UnionFindCount;
 
 public class Solution2 {
 
@@ -21,7 +21,7 @@ public class Solution2 {
         }
         Arrays.sort(q, (a, b) -> a[0] - b[0]);
 
-        UnionFind2 uf = new UnionFind2(t);
+        UnionFindCount uf = new UnionFindCount(t);
         int[] ans = new int[k], D = { 0, -1, 0, 1, 0 };
         for (int i = 0, j = 0; i < k; i ++) {
             for ( ; j < t && nums[j][0] < q[i][0]; j ++) {
