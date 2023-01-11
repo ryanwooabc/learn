@@ -45,7 +45,7 @@
 -                   +--------------------------------------------------- URL Seen?  
 -                                                                            |  
 -                                                                         URL DB  
-```java
+```
 
 - Seed URL: starting point
 - URL Frontier: URL Queue, Kafka? 参考文献？Distribute to multiple servers

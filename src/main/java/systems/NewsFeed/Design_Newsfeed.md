@@ -79,7 +79,7 @@
 - App/Web -+-> LB -> WebServer (Conn/Auth/Rate) ---> NewsfeedService ---+---> NewsfeedCache
 -          |                                                            +---> PostCache ---> PostDB
 -          +-> CDN (Image, Video)
-```java
+```
 
 - WebServer: maintain user connection, auth and limit rate
 - PostService: Persist Post data into DB and cache
